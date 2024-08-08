@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador Teste</title>
+
+
+  <script src="script.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section>
+    <h1>Counter</h1>
+    <div class="container">
+      <button id="random-btn">Random 1-100000</button>
+      <p id="number-display"><span id="existing-number"></span></p>
+
+  </div>
+
+    <button onclick="aumentar1()">+ 1</button>
+    <button onclick="diminuir1()">- 1</button>
+    <button onclick="aumentar10()">+ 10</button>
+    <button onclick="diminuir10()">- 10</button>
+    <button onclick="aumentar100()">+ 100</button>
+    <button onclick="diminuir100()">- 100</button>
+    <button onclick="aumentar1000()">+ 1000</button>
+    <button onclick="diminuir1000()">- 1000</button>
+    <button onclick="zerar()">RESET</button>
+    <button onclick="generateConfetti()">Have A Good Count :)</button>
+  </section>
+
+  <script>
+
+    // estado da minha aplicação
+    let numero = 0
+    mostrarNaTela()
+
+// jogar o estado da aplicação na tela
+function mostrarNaTela() {
+  const p = document.querySelector("p")
+  p.innerText = numero
+}
+
+document.getElementById('random-btn').addEventListener('click', function() {
+  const randomNumber = Math.floor(Math.random() * 100000) + 1; 
+  document.getElementById('number-display').textContent = randomNumber;
+  numero = randomNumber
+  mostrarNaTela()
+  })
+  
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+
+</script>
+
+</body>
+
+</html>

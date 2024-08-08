@@ -1,0 +1,116 @@
+* body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid (color);
+    min-height: 100vh;
+
+    
+
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 245px; /* Altura do contêiner, ajuste conforme necessário */
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    background-color: #000000;
+    border: beige;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: ruby;
+    font-size: 17px;
+    margin: 7px 5px;
+    cursor: grabbing;
+    border-radius: 8px;
+}
+
+button:active {
+    background-color: #000000;
+    box-shadow: 0 4px rgb(54, 47, 47);
+    transform: translateY(2px);
+}
+
+#random-number {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+    h1 {
+      font-size: 50px;
+      font-style: italic;
+      border-style: outset;
+      border-color: #7415159c;
+    }
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+
+      background: rgb(0, 0, 0);
+      color: white;
+      display: grid;
+      place-items: center;
+    }
+
+    section {
+        border: 10px solid rgba(36, 0, 0, 0.932);
+        min-height: 100vh;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 50px 60px;
+        border-radius: 30px;
+        text-align: center;
+        width: 630px;
+        height: 700px;
+
+
+    }
+
+    p {
+      font-size: 120px;
+      border: 3px solid rgb(3, 0, 20);
+            border-radius: 30px;
+            text-align: center;
+            padding: 10px;
+            min-width: 200px;
+            background-color: rgb(77, 77, 77);
+    }
+
+    button {
+    background-color: #000000;
+    border: beige;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: ruby;
+    font-size: 17px;
+    margin: 15px 15px;
+    cursor: grabbing;
+    border-radius: 17px;
+    }
+
+    button:active {
+    background-color: #0e0600;
+    box-shadow: 0 4px rgb(54, 47, 47);
+    transform: translateY(2px);
+}
+
+
+
+
+
+
