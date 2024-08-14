@@ -52,7 +52,9 @@ button:active {
       font-style: italic;
       border-style: outset;
       border-color: #7415159c;
+      animation: rgbglow 2.0s infinite;
     }
+
     * {
       margin: 0;
       box-sizing: border-box;
@@ -75,8 +77,6 @@ button:active {
         text-align: center;
         width: 630px;
         height: 700px;
-
-
     }
 
     p {
@@ -109,8 +109,24 @@ button:active {
     transform: translateY(2px);
 }
 
+.generateConfetti {
+  color: red;
+}
 
-
-
-
-
+@keyframes rgbglow {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  25% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(255, 0, 0);
+  }
+  75% {
+    color: rgb(195, 0, 255);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
