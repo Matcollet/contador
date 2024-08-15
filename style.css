@@ -109,10 +109,6 @@ button:active {
     transform: translateY(2px);
 }
 
-.generateConfetti {
-  color: red;
-}
-
 @keyframes rgbglow {
   0% {
     color: rgb(0, 0, 0);
