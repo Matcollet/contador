@@ -58,7 +58,7 @@ button:active {
     }
 
     section {
-        border: 10px solid rgba(36, 0, 0, 0.932);
+        border: 10px solid;
         min-height: 100vh;
         background: rgba(255, 255, 255, 0.2);
         padding: 50px 60px;
@@ -66,16 +66,17 @@ button:active {
         text-align: center;
         width: 630px;
         height: 700px;
+        animation: Borderrgbglow 2.0s infinite;
     }
 
     p {
       font-size: 120px;
       border: 3px solid rgb(3, 0, 20);
-            border-radius: 30px;
-            text-align: center;
-            padding: 10px;
-            min-width: 200px;
-            background-color: rgb(77, 77, 77);
+      border-radius: 30px;
+      text-align: center;
+      padding: 10px;
+      min-width: 200px;
+      background-color: rgb(77, 77, 77);
     }
 
     button {
@@ -113,5 +114,23 @@ button:active {
   }
   100% {
     color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes Borderrgbglow {
+  0% {
+    border-color: rgb(0, 0, 0);
+  }
+  25% {
+    border-color: rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgb(255, 0, 0);
+  }
+  75% {
+    border-color: rgb(195, 0, 255);
+  }
+  100% {
+    border-color: rgb(0, 0, 0);
   }
 }
