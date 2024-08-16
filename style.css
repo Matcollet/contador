@@ -7,10 +7,7 @@
     align-items: center;
     border: 1px solid (color);
     min-height: 100vh;
-
-    
-
-
+    background: linear-gradient(90deg, black, grey);
 }
 
 .container {
@@ -58,14 +55,6 @@ button:active {
     * {
       margin: 0;
       box-sizing: border-box;
-    }
-
-    body {
-
-      background: rgb(0, 0, 0);
-      color: white;
-      display: grid;
-      place-items: center;
     }
 
     section {
