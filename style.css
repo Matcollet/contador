@@ -66,7 +66,7 @@ button:active {
         text-align: center;
         width: 630px;
         height: 700px;
-        animation: Borderrgbglow 2.0s infinite;
+        animation: brilhoBorda 2.0s infinite;
     }
 
     p {
@@ -132,5 +132,23 @@ button:active {
   }
   100% {
     border-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes brilhoBorda {
+  0% {
+      box-shadow: 0 0 5px #fff, 0 0 15px #000000, 0 0 30px #000000, 0 0 45px #000000, 0 0 60px #000000, 0 0 75px #000000;
+  }
+  25% {
+    box-shadow: 0 0 5px #fff, 0 0 15px #ffffff, 0 0 30px #ffffff, 0 0 45px #ffffff, 0 0 60px #ffffff, 0 0 75px #ffffff;
+  }
+  50% {
+    box-shadow: 0 0 5px #fff, 0 0 15px #ff0000, 0 0 30px #ff0000, 0 0 45px #ff0000, 0 0 60px #ff0000, 0 0 75px #ff0000;
+  }
+  75% {
+    box-shadow: 0 0 5px #fff, 0 0 15px #c300ff, 0 0 30px #c300ff, 0 0 45px #c300ff, 0 0 60px #c300ff, 0 0 75px #c300ff;
+  }
+  100% {
+      box-shadow: 0 0 5px #fff, 0 0 15px #000000, 0 0 30px #000000, 0 0 45px #000000, 0 0 60px #000000, 0 0 75px #000000;
   }
 }
