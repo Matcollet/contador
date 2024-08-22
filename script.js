@@ -47,7 +47,7 @@ function zerar() {
 function generateConfetti() {
   confetti({
       particleCount: 130,
-      spread: 100,
+      spread: 200,
       origin: { y: 0.6 }
   });
   mostrarNaTela()
