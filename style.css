@@ -64,7 +64,7 @@ button:active {
         padding: 50px 60px;
         border-radius: 30px;
         text-align: center;
-        width: 630px;
+        width: 900px;
         height: 700px;
         animation: brilhoBorda 2.0s infinite;
     }
