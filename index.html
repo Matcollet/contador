@@ -23,15 +23,15 @@
 
   </div>
 
-    <button onclick="aumentar1()">+ 1</button>
-    <button onclick="diminuir1()">- 1</button>
-    <button onclick="aumentar10()">+ 10</button>
-    <button onclick="diminuir10()">- 10</button>
-    <button onclick="aumentar100()">+ 100</button>
-    <button onclick="diminuir100()">- 100</button>
-    <button onclick="aumentar1000()">+ 1000</button>
-    <button onclick="diminuir1000()">- 1000</button>
-    <button onclick="zerar()">RESET</button>
+  <button onclick="diminuir1()">- 1</button>
+  <button onclick="aumentar1000()">+ 1000</button>
+  <button onclick="aumentar100()">+ 100</button>
+  <button onclick="diminuir10()">- 10</button>
+  <button onclick="zerar()">RESET</button>
+  <button onclick="aumentar10()">+ 10</button>
+  <button onclick="diminuir100()">- 100</button>
+  <button onclick="diminuir1000()">- 1000</button>
+  <button onclick="aumentar1()">+ 1</button>
     <button onclick="generateConfetti()">Have A Good Count :)</button>
   </section>
 
@@ -52,15 +52,19 @@ document.getElementById('random-btn').addEventListener('click', function() {
   document.getElementById('number-display').textContent = randomNumber;
   numero = randomNumber
   mostrarNaTela()
-  })
-  
+})
+
+  function generateConfetti() {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
 </body>
 
 </html>
